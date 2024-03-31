@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="73.058" tests="17" skipped="0" failures="0" errors="0">
+<testcase classname="Creating a new checking account" name="Creating a new standard individual checking account" time="11.972">
+<system-out><![CDATA[
+Given the user logged in as "janekoko@gmail.com" "JaneKoko12"...............passed
+When the user creates a new checking account with the following data........passed
+Then the user should see the green "Successfully created new Standard Checking account named Jane Koko Second Checking" message.passed
+And the user should see newly added account card............................passed
+And the user should see the following transactions..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Positive Case. As a user, I want to successfully create Digital Bank account" time="6.997">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then User should be displayed with the message "Success Registration Successful. Please Login.".passed
+Then the following user info should be saved in the db......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.1" time="2.71">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "title" required field error message "Виберіть елемент зі списку.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.2" time="2.89">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "firstName" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.3" time="2.778">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "lastName" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.4" time="2.78">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "gender" required field error message "Виберіть один із запропонованих варіантів.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.5" time="3.175">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "dob" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.6" time="2.789">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "ssn" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.7" time="2.886">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "email" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.8" time="2.935">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "password" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.9" time="4.304">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "address" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.10" time="4.281">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "locality" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.11" time="4.154">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "region" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.12" time="4.22">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "postalCode" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.13" time="4.272">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "country" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.14" time="4.971">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "homePhone" required field error message "Заповніть це поле.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin, I want to make sure users can not register without providing all valid data - Example #1.15" time="4.666">
+<system-out><![CDATA[
+Given The user with "jack@test.co" is not in DB.............................passed
+Given User navigates to Digital Bank signup page............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "termsCheckMark" required field error message "Поставте тут прапорець, якщо хочете продовжити.".passed
+]]></system-out>
+</testcase>
+</testsuite>
